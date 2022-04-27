@@ -710,6 +710,12 @@ body {
         flex: 3 1 27.5em; }
       .signup__form__input--submit {
         flex: 1 1 10em; }
+        .signup__form[data-error]::after {
+            content: attr(data-error);
+            font-size: 0.9em;
+            color: hsl(0, 100%, 63%);
+            display: inherit;
+            margin: 0px 20px;}
 
 .footer {
   grid-column: ml-end / mr-start;
